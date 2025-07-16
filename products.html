@@ -16,6 +16,7 @@
     >
       <h1 class="text-2xl">Greenden</h1>
       <svg
+        id="menuicon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -46,6 +47,37 @@
       </ul>
     </nav>
 
+    <!--Side Navbar-->
+    <section
+      id="sidenav"
+      class="bg-green-100 fixed z-20 top-0 transition-all duration-300 ease-in-out p-5 flex flex-col items-center gap-5 shadow-xl md:hidden"
+      style="width: 50%; height: 100vh; right: -50%"
+    >
+      <ul class="flex flex-col gap-10 items-center text-gray-600">
+        <div id="text-right p-5">
+          <p
+            id="close-nav"
+            class="inline cursor-pointer border border-black p-1"
+          >
+            X
+          </p>
+        </div>
+        <li>
+          <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="products.html"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="contact.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </section>
+
     <!-- Product Section -->
     <section class="p-6">
       <h1 class="text-3xl font-bold text-center mb-5">Our Plant Collection</h1>
@@ -53,13 +85,17 @@
       <!-- Search Bar -->
       <div class="flex justify-center mb-8">
         <input
+          id="search-bar"
           type="text"
           placeholder="Search for a plant..."
           class="w-full md:w-1/2 px-4 py-2 border border-gray-300 rounded shadow-sm"
         />
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div
+        id="product-container"
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      >
         <div
           class="bg-white p-4 rounded shadow hover:shadow-xl transition max-w-sm mx-auto"
         >
@@ -156,5 +192,6 @@
       <p>Beautiful plants delivered with care.</p>
       <p>Copyright &copy; 2025</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

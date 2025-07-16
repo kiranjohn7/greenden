@@ -18,6 +18,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
     >
       <h1 class="text-2xl">Greenden</h1>
       <svg
+        id="menuicon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -32,15 +33,48 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         />
       </svg>
       <ul class="flex gap-5 text-gray-600 hidden md:flex">
-        <li><a class="hover:underline hover:text-black" href="#">Home</a></li>
+        <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
         <li>
-          <a class="hover:underline hover:text-black" href="products.html">Products</a>
+          <a class="hover:underline hover:text-black" href="products.html"
+            >Products</a
+          >
         </li>
         <li>
-          <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+          <a class="hover:underline hover:text-black" href="contact.html"
+            >Contact</a
+          >
         </li>
       </ul>
     </nav>
+
+    <!--Side Navbar-->
+    <section
+      id="sidenav"
+      class="bg-green-100 fixed z-20 top-0 transition-all duration-300 ease-in-out p-5 flex flex-col items-center gap-5 shadow-xl md:hidden"
+      style="width: 50%; height: 100vh; right: -50%"
+    >
+      <ul class="flex flex-col gap-10 items-center text-gray-600">
+        <div id="text-right p-5">
+          <p
+            id="close-nav"
+            class="inline cursor-pointer border border-black p-1"
+          >
+            X
+          </p>
+        </div>
+        <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+        <li>
+          <a class="hover:underline hover:text-black" href="products.html"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="contact.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </section>
 
     <!--Header Section-->
     <section class="bg-green-100 p-4 flex justify-center">
@@ -242,5 +276,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       <p>Copyright &copy; 2025</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
